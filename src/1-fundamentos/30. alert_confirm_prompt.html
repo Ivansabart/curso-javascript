@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert confirm y prompt</title>
+</head>
+<body>
+    <script>
+        console.log(window);
+        // Mensaje y boton de Aceptar
+        // window.alert("Hola, esto es una alerta");
+        // Mensaje con botonoes de Aceptar y Cancelar
+        // window.confirm("Hola, esto es una confirmacion");
+        // Prompt con un input
+        // window.prompt("Hola, esto es un aviso y le permite al usuario ingresar un valor");
+
+        let alerta = alert("Hola, esto es una alerta"),
+        // Mensaje con botonoes de Aceptar y Cancelar
+            confirmacion = confirm("Hola, esto es una confirmacion"),
+        // Prompt con un input
+            aviso = prompt("Hola, esto es un aviso y le permite al usuario ingresar un valor");
+
+        console.log(alerta); // Devuelve undefined
+        console.log(confirmacion); // true o false
+        console.log(aviso); // Input o null
+
+    </script>
+</body>
+</html>

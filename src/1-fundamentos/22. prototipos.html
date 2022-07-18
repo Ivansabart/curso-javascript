@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototipos</title>
+</head>
+
+<body>
+    <script>
+        // POO
+        /*
+        Clases: Modelo a seguir
+        Objetos: Instancia de una clase
+            Atributos: Es una caracteristica o propiedad del objeto
+            // Variables dentro de un objeto
+            Metodos: Son las acciones que un objeto puede realizar
+            // Funciones dentro de un objeto
+        */
+        // Prototipo es un mecanismo por el cual un objeto puede heredar de un objeto padre atributos y metodos
+
+        /*const animal = {
+            nombre: "Snoopy",
+            sonar(){
+                console.log("Hago sonidos porque estoy vivo");
+            }
+        }
+ 
+        const animal2 = {
+            nombre: "Lola Bunny",
+            sonar(){
+                console.log("Hago sonidos porque estoy vivo");
+            }
+        }
+ 
+        console.log(animal);
+        console.log(animal2);
+        */
+
+        // Funcion contructora (Prototipo vacio)
+        function Animal(nombre, genero) {
+            // Atributos
+            this.nombre = nombre;
+            this.genero = genero;
+            // Metodos se declaran afuera para mejorar rendimiento
+        }
+
+        // Metodos
+        Animal.prototype.sonar = function () {
+            console.log("Hago sonidos porque estoy vivo");
+        }
+        Animal.prototype.saludar = function () {
+            console.log(`Hola, me llamo ${this.nombre}`);
+        }
+
+        const snoopy = new Animal("Snoopy", "Macho"),
+            lolaBunny = new Animal("Lola Bunny", "Hembra");
+
+        console.log(snoopy);
+        console.log(lolaBunny);
+
+        snoopy.sonar();
+        snoopy.saludar();
+
+        lolaBunny.sonar();
+        lolaBunny.saludar();
+    </script>
+</body>
+
+</html>

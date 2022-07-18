@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+<body>
+    <script>
+        // --- Objetos ---
+        // Prototipo derivado del objeto String
+        // Se recomiendad declarar tipos de datos compuestos con CONST para evitar cambiar la referencia guardada en memoria
+        const a2 = new String("Hola");
+        console.log(a2);
+        const b2 = {}
+        console.log(b2);
+        // Valido pero en desuso, declaracion devivada del constructor Object
+        const c2 = Object();
+        console.log(c2);
+        // Dentro de un objeto, a las variables se le llaman atributos
+        // Y las funciones se le llama metodos
+        const ivan = {
+            nombre: "Ivan",
+            apellido: "Salazar",
+            edad: 27,
+            pasatiempos: ["Guitarra", "Videojuegos", "Peliculas"],
+            soltero: true,
+            contacto: {
+                email: "ivansabart@gmail.com",
+                twitter: "@ivansabart",
+                movil: "5212221724775"
+            },
+            saludar: function(){
+                console.log(`Hola :)`)
+            },
+            decirMiNombre: function(){
+                console.log(`Hola me llamo ${this.nombre} ${this.apellido} y tengo ${this.edad} años y me puedes seguir como ${this.contacto.twitter} en twitter`);
+            }
+        }
+
+        console.log(ivan);
+        // Acceder con corchetes es poco usado
+        console.log(ivan["nombre"]);
+        console.log(ivan["apellido"]);
+        // La notacion del punto para acceder a los atributos es la mas usada
+        console.log(ivan.nombre);
+        console.log(ivan.apellido);
+        console.log(ivan.edad);
+        console.log(ivan.soltero);
+        console.log(ivan.pasatiempos[1]);
+        console.log(ivan.contacto);
+        console.log(ivan.contacto.twitter);
+        // Invocar metodos de un objeto
+        ivan.saludar();
+        ivan.decirMiNombre();
+        // Metodo keys que recibe un objeto y devuelve un arreglo con el listado de las llaves del objeto
+        console.log(Object.keys(ivan));
+        // Metodo values que recibe un objeto y devuelve un arreglo con el listado de los valores del objeto
+        console.log(Object.values(ivan));
+        // Metodo que pregunta si un objeto tiene una propiedad, devuelve true o false
+        console.log(ivan.hasOwnProperty("nombre"));
+        console.log(ivan.hasOwnProperty("nacimiento"));
+    </script>
+</body>
+</html>

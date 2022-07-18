@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <script>
+        // --- Arrays ---
+        const a1 = [];
+        console.log(a1);
+        const b1 = [1, true, "Hola", ["A", "B", "C", [1,2,3]]];
+        console.log(b1);
+        console.log(b1[2]);
+        console.log(b1[0]);
+        console.log(b1[3]);
+        console.log(b1[3][3][1]);
+        // Nuevo metodo para inicializar arreglo con valores definidos
+        const c1 = Array.of("X", "Y", "Z", 9, 8, 7);
+        console.log(c1); 
+        // Asignar valores a todas las posiciones 
+        const d1 = Array(100).fill(false);
+        console.log(d1);
+        // Formas antiguas para declarar arreglos a partir del constructor (desuso)
+        const e = new Array();
+        console.log(e);
+        const f1 = new Array(1,2,3,true,false);
+        console.log(f1);
+        const colores2 = ["Rojo", "Verde", "Azul"];
+        console.log(colores2);
+        // Coloca un nuevo elemento al final
+        colores2.push("Negro");
+        console.log(colores2);
+        // Elimina el elemento del final
+        colores2.pop();
+        console.log(colores2);
+        colores2.forEach(function(el){
+            console.log(`<li>${el}</li>`);
+        });
+        colores2.forEach(function(el, index){
+            console.log(`<li id="${index}">${el}</li>`);
+        });
+    </script>
+</body>
+</html>

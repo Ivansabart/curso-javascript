@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objeto Console</title>
+</head>
+<body>
+    <script>
+        // Objeto propio de JavaScript
+        console.log(console);
+        console.error("Esto es un error");
+        console.warn("Esto es un aviso");
+        console.info("Esto es un mensaje informativo");
+        console.log("Un registro de lo que ha pasado en nuestra aplicacion");
+
+        let nombre = "Ivan",
+            apellido = "Salazar",
+            edad = 27;
+
+        console.log(nombre);
+        console.log(apellido);
+        console.log(edad);
+        
+        console.log(nombre, apellido, edad); 
+        console.log(`Hola, mi nombre es ${nombre} ${apellido} y tengo ${edad} anios`);
+        console.log(`Hola, mi nombre es %s %s y tengo %d anios`, nombre, apellido, edad);
+        console.clear();
+
+        console.log(window);
+        console.log(document);
+        console.dir(document);
+
+        console.group("Inicio del grupo");
+        console.log("a");
+        console.log("b");
+        console.log("c");
+        console.log("d");
+        console.groupEnd();
+
+        console.table(Object.entries(console).sort());
+
+        const numeros = [1,2,3,4,5],
+            vocales = ["a", "e", "i", "o", "u"];
+
+        console.table(numeros);
+        console.table(vocales);
+
+        const perro = {
+            nombre: "Boni",
+            raza: "Boxer",
+            color: "cafe"
+        }
+        console.table(perro);
+
+        console.time(`Cuanto tiempo tarda mi codigo`);
+        const arreglo = Array(1000000);
+
+        for(let i = 0; i < arreglo.length; i++){
+            arreglo[i] = i;
+        }
+
+        console.timeEnd(`Cuanto tiempo tarda mi codigo`);
+        // console.log(arreglo);
+
+        for(let i = 0; i < 100; i++){
+            console.count("codigo for");
+            console.log(i);
+        }
+
+        let x = 2,
+            y = 2,
+            pruebaXY = "Se espera que X siempre sea < Y";
+        // Se ejecuta cuando la condicion es falsa
+        console.assert(x<y, {x,y,pruebaXY});
+    </script>
+</body>
+</html>

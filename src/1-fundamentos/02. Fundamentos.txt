@@ -1,0 +1,82 @@
+// Declaracion de variables
+--- bien ---
+var a 
+var $a
+var _a
+--- mal ---
+var -a
+var 1a 
+--- Snake_case en archivos: mi_archivo_javascript.js ---
+mi_archivo_javascript.js
+--- UPPER_CASE en constantes: ---
+const UNA_CONSTANTE
+PI = 3.141592653589793
+--- UpperCamelCase en clases: ---
+class SerHumano{
+    constructor(nombre, genero){
+        this.nombre = nombre
+        this.genero = genero
+    }
+}
+miNombreEs(){
+    return 'Mi nombre es ${this.nombre}'
+}
+--- LowerCamelCase enObjetos ---
+const unObjeto = {
+    nombre: 'Ivan',
+    email: 'ivansabart@gmail.com'
+}
+--- Primitivos ---
+let unaCadena = 'Hola Mundo',
+    unNumero = 19,
+    unBoolean = true
+--- Funciones ---
+function holaMundo(nombre){
+    alert('Hola mundo ${nombre}')
+}
+holaMundo('Ivan')
+--- Instancias ---
+const ajax = nre XMLHttpRequest(),
+    jon = new SerHumano('Ivan', 'Hombre')
+--- Palabras reservadas ---
+A: abstract
+B: boolean, break, byte
+C: case, catch, char, class, const, continue
+D: debugger, default, delete, do, double
+E: else, enum, export, extends
+F: false, final, finally, float, for, function
+G: goto
+I: if, implements, import, in, instanceof, int, interface
+L: let, long
+N: native, new, null
+P: package, private, protected, public
+R: return
+S: short, static, super, switch, synchronized
+T: this, throw, throws, transient, true, try, typeof
+V: var, volatile, void
+W: while, with
+--- Ordenamiento de codigo ---
+1. Importacion de modulos externos
+2. Declaracion de variables
+3. Declaracion de funciones
+4. Ejecucion de codigo
+--- Tipos de datos en JavaScript ---
+1. Primitivos (Se accede directamente al valor)
+- string 
+- number
+- boolean
+- null
+- undefined
+- NaN 
+--- 2. Compuestos (Se accede al valor) ---
+- objet = {}
+- array = []
+- function (){}
+- Class{}
+- etc
+// Esto es un comentario de una linea
+/* 
+Esto es un
+comentario de 
+varias lineas
+*/

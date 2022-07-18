@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow functions</title>
+</head>
+<body>
+    <script>
+        // Nueva forma de definir funciones anonimas expresadas
+        /* const saludar = function(){
+            console.log(`Hola`);
+        }
+        saludar(); */
+
+        // Quitar `function` y entre el parentesis y la llave colocar =>
+        // Una sola linea de instruccion en la funcion se pueden omitir las llaves
+        // Si recibe UN parametro se pueden omitir los parentesis
+        const saludar = nombre => console.log(`Hola ${nombre}`);
+        saludar("Ivan");
+
+        /* const sumar = function(a, b) {
+            return a + b;
+        }*/
+        const sumar = (a,b) => a + b;
+        console.log(sumar(8, 9));
+        // Lleva un return implicito despues de la flecha
+        const funcionDeVariasLineas = () => {
+            console.log("Uno");
+            console.log("Dos");
+            console.log("Tres");
+        }
+        funcionDeVariasLineas();
+
+        const numeros = [1, 2, 3, 4, 5];
+        numeros.forEach((el, index) => console.log(`El elemento ${el} esta en la posicion ${index}`));
+
+        /*function Perro(){
+            console.log(this);
+        }
+        Perro(); */
+
+        // Capturan el contexto del objeto en el que se encuentra su objeto padre
+        const perro = {
+            nombre: "Kenai",
+            ladrar: () => {
+                console.log(this);
+            }
+        }
+        perro.ladrar();
+    </script>
+</body>
+</html>

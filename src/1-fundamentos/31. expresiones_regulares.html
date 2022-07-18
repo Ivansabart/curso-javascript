@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expresiones regulares</title>
+</head>
+<body>
+    <script>
+        /*
+        Expresiones Regulares: 
+            Son una secuencia de caracteres que forman un patron de busqueda,
+            principalmente utilizada para la busqueda de patrones de cadenas
+            de caracteres.
+        */
+       // Sirven para validar RFC, Correo-e, Tarjetas bancarias, DNI...
+
+       let cadena = "Lorem ipsum dolor sit amet consectetur adipiscing elit. Voluptatem fuga cupidiate dolores saepe, praesentium sit eaque recusandae id sapiente similique, laudantium voluptatum perferendis ea iure ad odio doloremque earum voluptate."
+       
+       let expReg2 = /lorem/ig;
+       console.log(expReg2.test(cadena));
+       console.log(expReg2.exec(cadena));
+    </script>
+</body>
+</html>

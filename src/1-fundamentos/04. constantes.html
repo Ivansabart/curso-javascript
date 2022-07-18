@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Var VS Let</title>
+</head>
+<body>
+    <script>
+        // --- Constantes ---
+            // No puedes reasignar sus valores. No cambia su valor en todo el flujo del programa (Primitivos)
+            // Declaracion de una constante (Bien)
+            const PI = 3.1416;
+            // (Mal), no puedes declarar constantes vacias
+            // const NUEVE;
+            // Declaraciones de tipos de datos compuestos como constantes
+            
+            // Objeto
+            const objeto = {
+                nombre: "Ivan",
+                edad: 27
+            }
+            // Arreglo
+            const colores = ["blanco", "negro", "azul"];
+
+            console.log(objeto);
+            console.log(colores);
+
+            objeto.correo = "ivansabart@gmail.com";
+            colores.push("anaranjado");
+
+            console.log(objeto);
+            console.log(colores);
+
+            // Siguen siendo las mismas estructuras en todo el flujo, solo cambia el numero de los datos
+    </script>
+</body>
+</html>

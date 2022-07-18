@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuevos TD JS</title>
+</head>
+<body>
+  <h1>Nuevos Tipos de Datos JavaScript</h1>
+  <script>
+    const mapa = new Map();
+    mapa.set("nombre", "Ivan");
+    mapa.set("apellido", "Salazar");
+    mapa.set("edad", 27);
+    console.log(mapa);
+    console.log(mapa.size);
+    console.log(mapa.has("correo"));
+    console.log(mapa.has("nombre"));
+    console.log(mapa.get("nombre"));
+    mapa.set("nombre", "Ivan Salazar");
+    console.log(mapa.get("nombre"));
+    mapa.delete("apellido");
+    mapa.set(19, "diecinueve");
+    mapa.set(false, "falso");
+    mapa.set({}, {});
+    console.log(mapa);
+    for (let [key, value] of mapa) {
+      console.log(`Llave: ${key}, Valor: ${value}`);
+    }
+    const mapa2 = new Map([
+      ["nombre", "Chester"],
+      ["edad", 5],
+      ["animal", "perro"],
+      [null, "nulo"]
+    ]);
+    console.log(mapa2);
+    const llavesMapa2 = [...mapa2.keys()];
+    const valoresMapa2 = [...mapa2.values()];
+    console.log(llavesMapa2);
+    console.log(valoresMapa2);
+  </script>
+</body>
+</html>

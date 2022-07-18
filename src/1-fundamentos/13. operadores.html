@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores</title>
+</head>
+<body>
+    <script>
+        // --- Operadores ---
+        // - Aritmeticos - : + - * / % () 
+        let a3 = 5 + 5;
+        console.log(a3);
+        a3 = 5 + 5- 10;
+        console.log(a3);
+        a3 = 5 + 5- 10 * 3;
+        console.log(a3);
+        a3 = 5 + (5 - 10) * 3;
+        console.log(a3);
+        let modulo = 5 % 2;
+        console.log(modulo);
+        
+        // - Operadores relacionales - : >, <, >=, <=, ==, ===, !=, !===
+        console.log(8 > 9);
+        console.log(8 < 9);
+        console.log(8 >= 9);
+        console.log(8 <= 9);
+
+        /*
+        =   1 igual es asignacion de valores
+        ==  2 iguales es comparacion de valores
+        === 3 iguales es comparacion de tipo de dato y de valor
+        */
+
+        console.log(7 == 7);
+        console.log("7" == 7);
+        console.log(0 == false);
+
+        console.log(7 === 7);
+        console.log("7" === 7);
+        console.log(0 === false);
+
+        // - Operadores de Incremento y decremento -
+        let i = 1;
+        i = i + 2;
+        console.log(i);
+        i = 1;
+        i += 2;
+        console.log(i);
+        i = 1;
+        i -= 2;
+        console.log(i);
+        i = 1;
+        i /= 3;
+        console.log(i);
+        i = 1;
+        i *= 3;
+        console.log(i);
+
+        // - Operador unario - 
+        i = 1;
+        i++;
+        console.log(i++);
+        i = 1;
+        i--;
+        // En el tiempo de ejecucion resta uno y luego imprime en el console.log porque se pone a la izquierda
+        console.log(--i);
+        i = 1;
+        ++i;
+        console.log(i);
+        i = 1;
+        --i;
+        console.log(i);
+        /* - Logicos -
+        !, Not: Niega expresiones
+        ||. Or: Si una funcion es verdadera todo es verdadero
+        &&, And: Todas las condiciones tienen que ser verdaderas para que and sea verdadero
+        */
+        console.log(!true);
+        console.log(!false);
+        console.log(9 === 9 || "9" === 9);
+        console.log(9 === 9 && "9" === 9);
+        console.log(9 === 9 && "9" === "9");
+    </script>
+</body>
+</html>

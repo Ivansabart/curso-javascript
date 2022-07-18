@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+<body>
+    <script>
+        // --- Strings ---
+        let nombre = "Ivan"; // Comillas dobles * (Mas comun)
+            let apellido = 'Salazar'; // Comillas simples
+            let saludo = new String("Hola mi nombre es"); // Declaracion con constructor (Mas formal, pero poco usado)
+            let lorem = "    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum, odio eu rutrum cursus, nulla augue vestibulum dolor    "
+            console.log(nombre,apellido,saludo);
+            console.log(
+                nombre.length, // Devuelve longitud
+                apellido.length,
+                saludo.length, 
+                nombre.toUpperCase(), // Forza a cadena de MAYUSCULAS
+                apellido.toLowerCase(), // Forza a cadena de minusculas
+                lorem.includes("amet"), // Verifica si esta la palabra
+                lorem.includes("ivan"),
+                lorem,
+                lorem.trim(), // Recorta los espacios al rededor de la cadena
+                lorem.split(" "), // Convierte cadena a arreglo con un separador definido
+                lorem.split(",") 
+            );
+            // - Concatenacion -
+            let saludos = "Hola mi nombre es " + nombre + " " + apellido + ".";
+            console.log(saludos);
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Var y Let</title>
+</head>
+<body>
+    <script>
+        // --- Ambito GLOBAL con VAR a diferencia de ambito de bloque {} con LET --- 
+        var hola = "Hola Mundo";
+            let hello = "Hello World";
+            console.log(hola);
+            console.log(hello);
+            // Objeto que contiene todo lo que se muestra a la pantalla con ambito global
+            console.log(window); 
+            // La variable var hola se guarda en el objeto window por su ambito global del navegador web
+            console.log(window.hola);
+            // La variable let hello NO se guarda en el objeto window por su ambito de bloque
+            console.log(window.hello);
+            // Ejemplo. Ambito GLOBAL declarando con VAR
+            console.log("*********************var********************");
+            var musica = 'Rock';
+            console.log("Variable antes del bloque. Musica:", musica);
+            // Esto es un bloque
+            {
+                // Es posible hacer redeclaracion con el mismo nombre de variable porque es otro bloque
+                var musica = "Pop";
+                console.log("Variable dentro del bloque. Musica:", musica);
+            }
+            console.log("Variable despues del bloque. Musica:", musica);
+            // Ejemplo. Ambito de BLOQUE declarando con LET 
+            console.log("*********************let********************");
+            let musica2 = 'Rock';
+            console.log("Variable antes del bloque. Musica:", musica2);
+            // Esto es un bloque
+            {
+                // Es posible hacer redeclaracion con el mismo nombre de variable porque es otro bloque
+                let musica2 = "Pop";
+                console.log("Variable dentro del bloque. Musica:", musica2);
+            }
+            console.log("Variable despues del bloque. Musica:", musica2);
+    </script>
+</body>
+</html>

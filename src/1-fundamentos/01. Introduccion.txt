@@ -1,0 +1,9 @@
+------------------------Curso de JavaScript --------------------------------- 
+ Lenguaje de alto nivel
+ Interpretado  y dinamico (Se compila en tiempo de ejecucion)
+ Debilmente tipado (El tipo de dato de una var puede cambiar en la ejecucion)
+ Multiparadigma (Funcional, estructurada, orientada a objetos)
+ Sencible a MAYUSCULAS y minusculas
+---- Buenas practicas -----
+ No necesitas punto y coma
+ Los identificadores deben comenzar con: una letra, o un signo de $, o un guion bajo. (Nunca con numeros o caracteres especiales

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuracion</title>
+</head>
+<body>
+    <script>
+        // Destructuring asigna dinamicamente valores a arreglos u objetos
+        // Ejemplo SIN destructuracion
+        let numeros = [1, 2, 3];
+        
+        let uno = numeros[0],
+         dos = numeros[1],
+         tres = numeros[2];
+
+        console.log(uno, dos, tres);
+
+        // Ejemplo CON destructuracion
+        const [one, two, three] = numeros;
+        console.log(one, two, three);
+
+        // Objeto persona, variables se deben llamar iguales aunque esten desordenadas
+        let persona = {
+            nombre: "Ivan",
+            apellido: "Salazar",
+            edad: 27
+        }
+
+        // Variables independientes con valores del objeto persona
+        let {apellido, edad, nombre} = persona;
+        console.log(nombre, apellido, edad);
+    </script>
+</body>
+</html>

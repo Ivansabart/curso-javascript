@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operador de cortocircuito</title>
+</head>
+<body>
+    <script>
+        /* Cortocircuito OR: Cuando el valor de la izquierda en la expresion 
+            siempre pueda validar a true, es el valor que se cargara 
+            por defecto.
+
+           Cortocircuito AND: Cuando el valor de la izquierda en la expresion 
+           siempre pueda validar a false, es el valor que se cargara 
+           por defecto.
+        */
+
+        /* function saludar(nombre = "Desconocido");  En la actualidad
+            es posible asignar valores por defecto en los parametros
+            pero anteriormente se usaba el operador cortocircuito:
+        */
+        
+        function saludar(nombre){
+            nombre = nombre || "Desconocido";
+            console.log(`Hola ${nombre}`);
+        }
+        saludar("Ivan");
+        saludar();
+        // Truthy con OR
+        console.log("cadena" || "Valor derecha");
+        console.log(19 || "Valor derecha");
+        console.log(true || "Valor derecha");
+        console.log([] || "Valor derecha");
+        console.log({} || "Valor derecha");
+        // Falsy con OR
+        console.log(false || "Valor derecha");
+        console.log(null || "Valor derecha");
+        console.log(undefined || "Valor derecha");
+        console.log("" || "Valor derecha");
+        console.log(0 || "Valor derecha");
+        // Truthy con AND
+        console.log("cadena" && "Valor derecha");
+        console.log(19 && "Valor derecha");
+        console.log(true && "Valor derecha");
+        console.log([] && "Valor derecha");
+        console.log({} && "Valor derecha");
+        // Falsy con AND
+        console.log(false && "Valor derecha");
+        console.log(null && "Valor derecha");
+        console.log(undefined && "Valor derecha");
+        console.log("" && "Valor derecha");
+        console.log(0 && "Valor derecha");
+    </script>
+</body>
+</html>

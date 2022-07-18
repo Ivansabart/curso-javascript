@@ -1,0 +1,6 @@
+Explica la mecánica de cómo resolver los ejercicios;
+- Se presentan cuatro ejercicios sin resolver
+- Se pretende que el viewer resuelva los ejercicios por su cuenta
+- Al siguiente video se mostrará su solución
+- En la descripción del video solución se presentarán nuevos ejercicios sin resolver en la descripción
+- En el video posterior se presentará la solución del ejercicio de la descripción del video anterior

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objeto Date</title>
+</head>
+<body>
+    <script>
+        // Constructor Date
+        console.log(Date());
+
+        let fecha = new Date();
+        console.log(fecha);
+        // Dia del mes
+        console.log(fecha.getDate());
+        // Dia de la semana DLMMJV -> 0 1 2 3 4 5 6
+        console.log(fecha.getDay());
+        // En Fe Ma Ab Ma Jun Jul Ag Se Oc No Dic -> 0 1 2 3 4 5 6 7 8 9 10 11
+        console.log(fecha.getMonth());
+        // Anios despues de 1900
+        console.log(fecha.getYear());
+        // Anio completo
+        console.log(fecha.getFullYear());
+        // Horas, minutos segundos y milisegundos
+        console.log(fecha.getHours());
+        console.log(fecha.getMinutes());
+        console.log(fecha.getSeconds());
+        console.log(fecha.getMilliseconds());
+
+        // Fecha humanamente entendible
+        console.log(fecha.toString());
+        console.log(fecha.toDateString());
+        console.log(fecha.toLocaleString());
+        console.log(fecha.toLocaleDateString());
+        console.log(fecha.toLocaleTimeString());
+        
+        // Diferencia del uso horario a partir de Londres, horario cero
+        console.log(fecha.getTimezoneOffset());
+
+        // Dia del horario cero UTC Londres
+        console.log(fecha.getUTCDate());
+        console.log(fecha.getUTCHours());
+        console.log(fecha.getUTCMinutes());
+
+        // Timestamp para bases de datos, segundos a partir de 1970
+        console.log(Date.now());
+
+        // Libreria MomentJS para manejo de tiempo en JS en momentjs.com
+
+        let cumpleIvan = new Date(1994, 03, 24);
+        console.log(cumpleIvan);
+    </script>
+</body>
+</html>
