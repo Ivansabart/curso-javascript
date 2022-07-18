@@ -9,14 +9,14 @@
 <body>
     <script>
         // --- Funciones ---
-        // - Declaracion de Funcion -
+        // - Declaracion de Funcion que no devuelve nada -
         function estoEsUnaFuncion(){
             console.log("Uno");
             console.log("Dos");
             console.log("Tres");
         }
 
-        function UnaFuncionQueDevuelveValor(){
+        function unaFuncionQueDevuelveValor(){
             console.log("Uno");
             console.log("Dos");
             console.log("Tres");
@@ -25,14 +25,14 @@
         // Invocacion de funciones
         estoEsUnaFuncion();
         // Variable que guarda el valor de la funcion
-        let valorDeFuncion = UnaFuncionQueDevuelveValor();
+        let valorDeFuncion = unaFuncionQueDevuelveValor();
         console.log(valorDeFuncion);
         // - Funcion que reciba valores - 
         function saludar(nombre, edad){
             console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años.`);
         }
         // - Funcion con valores por defecto - 
-        saludar("Ivan", 27);
+        saludar("Ivan", 28);
         function saludar(nombre = "Desconocido", edad = 0){
             console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años.`);
         }
@@ -46,6 +46,7 @@
         funcionDeclarada();
         // ERROR si la invocamos antes de la declaracion de funcionExpresada();
         // - Funcion expresada - Funcion anonima asignada como valor a una variable
+        //funcionExpresada();
         const funcionExpresada = function(){
             console.log("Esto es una funcion expresada; una funcion que se le ha asignado como valor a una variable, si invocamos esta funcion antes de su definicion JS nos dira... Cannot access 'funcionExpresada' before initialization at");
         }

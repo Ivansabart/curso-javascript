@@ -18,10 +18,10 @@ class SerHumano{
         this.genero = genero
     }
 }
+--- LowerCamelCase enObjetos yFunciones ---
 miNombreEs(){
-    return 'Mi nombre es ${this.nombre}'
+    return 'Mi nombre es ${this.nombre}' // template strings
 }
---- LowerCamelCase enObjetos ---
 const unObjeto = {
     nombre: 'Ivan',
     email: 'ivansabart@gmail.com'
